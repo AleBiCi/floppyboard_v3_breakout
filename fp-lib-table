@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SAMTEC_FTSH-107-01-L-DV-K-TR")(type "KiCad")(uri "${KIPRJMOD}/footprints/SAMTEC_FTSH-107-01-L-DV-K-TR.pretty")(options "")(descr ""))
+)
