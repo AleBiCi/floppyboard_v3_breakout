@@ -51,8 +51,55 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        [
+          "silk_overlap|109042500|115160000|094f5209-e749-42eb-8ac1-2e1bd8081f74|ef62d8e6-7199-41c4-823e-ec17d42aa4ad",
+          ""
+        ],
+        [
+          "silk_overlap|109042500|122360000|245ee649-64b7-437d-8b62-a542635f2eac|7b97a4ad-4e99-48a2-bb37-f12f8515ca88",
+          ""
+        ],
+        [
+          "silk_overlap|114450000|116654819|5def3def-86c4-43f3-85e7-623e24b23349|b0b67c54-9698-43d1-8568-a83f5c608908",
+          ""
+        ],
+        [
+          "silk_overlap|115890000|118470000|8c01ab47-de11-46f1-b076-9cfd8b8713f6|7227d685-2ed1-4224-8f99-60f1637850aa",
+          ""
+        ],
+        [
+          "silk_overlap|121262500|115160000|bc80381f-a00b-4ac5-b0d7-e21ecf429f38|2126b79a-e3db-4885-a4b9-6361759b3fd2",
+          ""
+        ],
+        [
+          "silk_overlap|121262500|122360000|69d6c80a-2f2e-4802-8e69-9dd62e16a883|a6821458-59a4-4971-b722-701c8ca7d403",
+          ""
+        ],
+        [
+          "silk_overlap|130580000|118367000|61ec788a-e25c-4685-a334-998f328bd51f|e963d675-515f-4a2f-b77d-e817a0e2157b",
+          ""
+        ],
+        [
+          "silk_overlap|130580000|122734000|ec791bc1-66c5-48a1-b095-35d308d9e639|e963d675-515f-4a2f-b77d-e817a0e2157b",
+          ""
+        ],
+        [
+          "silk_overlap|140621000|118367000|5e7faf80-0072-4a70-873d-ca4ccc274d45|0cca3efc-a8a0-459b-91c2-b7e6575f1ac0",
+          ""
+        ],
+        [
+          "silk_overlap|140621000|122734000|d2831f82-478c-4144-8bf2-816a95d39c68|0cca3efc-a8a0-459b-91c2-b7e6575f1ac0",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -133,7 +180,7 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -180,7 +227,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -207,7 +256,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -474,6 +528,20 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "3V3",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.4
       }
     ],
     "meta": {
@@ -481,7 +549,20 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "3V3",
+        "pattern": "/3V3"
+      },
+      {
+        "netclass": "3V3",
+        "pattern": "/VUSB"
+      },
+      {
+        "netclass": "3V3",
+        "pattern": "/VIN"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
